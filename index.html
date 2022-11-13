@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheSignIn</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+
+        }
+
+        .formContainer ul {
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+            height: 10vh;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #form {
+            padding: 20px 57px 20px;
+            margin: auto;
+            height: 80vh;
+            width: 40vw;
+        }
+
+
+        .Login {
+            margin-top: 10px;
+        }
+
+        .Login h1 {
+            font-weight: 900;
+        }
+
+        .Login p {
+            opacity: 0.6;
+            margin-top: 11px
+        }
+
+        #button h6 {
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+           
+            border: 1px solid rgb(222, 223, 223);
+            display: flex;
+            width: 25vw;
+       
+            padding: 5px;
+            transition: 0.7s ease-in-out;
+        }
+
+
+        #button h6:hover{
+            color:#fff;
+            /* border-radius: 30px; */
+            background-color: rgb(41, 41, 217);
+        }
+
+        #google {
+            cursor: pointer;
+            border: none;
+            background-color: #fff;
+        }
+
+        #text h6 {
+            font-size: 1em;
+            font-weight: 300;
+        }
+
+        #text {
+
+            cursor: pointer;
+            background-color: #fff;
+            border: none;
+        }
+
+        .signEmail {
+            font-size: smaller;
+            text-align: center;
+            width: 25vw;
+            margin-bottom: 3vh;
+
+        }
+
+        .signEmail p {
+            opacity: 0.4;
+        }
+
+        #password {
+            margin: 10px 0px 20px;
+            outline: none;
+            width: 25vw;
+            height: 6vh;
+            padding: 10px;
+            border-radius: 20px;
+            opacity: 0.4;
+        }
+
+        #email {
+            margin: 10px 0px 20px;
+            outline: none;
+            width: 25vw;
+            height: 6vh;
+            padding: 10px;
+            border-radius: 20px;
+            opacity: 0.4;
+        }
+
+        .p a {
+            width: 50%;
+            float: right;
+        }
+
+        #forgatPass {
+            display: flex;
+            gap: 4px;
+        }
+
+        #checked {
+            cursor: pointer;
+            height: 3vh;
+        }
+
+        #loginf {
+            cursor: pointer;
+            border: none;
+            width: 25vw;
+            border-radius: 26px;
+            padding: 7px;
+            margin: 10px 0px 20px;
+            color:#fff;
+            background-color: rgb(43, 43, 215);
+        }
+
+        #loginf{
+            background-color: rgb(24, 24, 148); 
+        }
+
+        .register a {
+            font-weight: bold;
+            color: rgb(2, 2, 227);
+        }
+
+
+        @media only screen and (max-width:941px){
+            .p a {
+            width: 60%;
+           
+        }
+        }
+
+        @media only screen and (max-width:332px){
+            .p a {
+            width:61%;
+           
+        }
+        }
+
+        @media only screen and (max-width:832px) {
+
+        #form {
+            width: 100%;
+        }
+
+        #button h6 {
+            width: 100%;
+        }
+
+        .signEmail {
+            width: 100%;
+        }
+
+        #password {
+            width: 100%;
+        }
+
+        #email {
+            width: 100%;
+        }
+
+        #loginf {
+            width: 100%;
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- <div class="formContainer">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Next</a></li>
+            </ul> -->
+        <div class="form" id="form">
+            <div class="Login">
+                <h2>Login</h2>
+                <p>See your growth and get consulting support!</p>
+            </div>
+            <br>
+            <div id="button">
+                <a href="https://accounts.google.com/ServiceLogin?elo=1" id="text">
+                    <h6>Sign in with Google</h6>
+                </a>
+            </div>
+
+            <div class="signEmail">
+                <p>-----or Sign in with Email-----</p>
+            </div>
+
+            <form action="input">
+                <label for="">Email*</label><br>
+                <input type="email" name="Email=" id="email" placeholder="mail@website.com" required>
+                <br>
+                <label for="">Password*</label><br>
+                <input type="Password" id="password" name="Passworld" placeholder="min. 8 character" required>
+                <br>
+                <div id="forgatPass">
+                    <input name="checked" id="checked" type="checkbox" required>
+                    Remember me
+                </div>
+                <div class="p">
+                    <a href="https://accounts.google.com/signin/usernamerecovery">Forgate password?</a>
+                </div>
+                <br>
+                <div class="sum">
+
+                    <input id="loginf" type="submit" value="Login">
+                </div>
+                <div class="register">
+                    <p>Not registered yet?
+                        <a href="https://support.google.com/accounts/answer/27441?hl=en">
+                            Create an Account</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <!-- </div> -->
+    </div>
+</body>
+
+</html>
